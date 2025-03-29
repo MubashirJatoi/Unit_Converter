@@ -15,12 +15,13 @@ def convert_units(category, value, unit):
     elif category == "Weight":
         if unit == "Kilograms to Pounds":
             return value * 2.20462
-        elif unit == "Pounds to kilograms":
+        elif unit == "Pounds to Kilograms":
             return value / 2.20462
+        
     elif category == "Time":
         if unit == "Seconds to Minutes":
             return value / 60
-        elif unit == "Munites to Seconds":
+        elif unit == "Minutes to Seconds":
             return value * 60
         elif unit == "Minutes to Hours":
             return value / 60
@@ -34,7 +35,7 @@ def convert_units(category, value, unit):
 
 
 if category == "Length":
-    unit = st.selectbox("select Conversation", ["Kilometers to Miles", "Miles to kilometers"])
+    unit = st.selectbox("select Conversation", ["Kilometers to Miles", "Miles to Kilometers"])
 elif category == "Weight":
     unit = st.selectbox("slect Conversation", ["Kilograms to Pounds", "Pounds to Kilograms"])
 elif category == "Time":
